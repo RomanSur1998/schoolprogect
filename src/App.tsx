@@ -1,9 +1,14 @@
 import React from "react";
+import MainRoutes from "./routes/MainRoutes";
 
 type Props = {};
 
 const App = (props: Props) => {
-  return <div>App</div>;
+  return (
+    <div>
+      <MainRoutes />
+    </div>
+  );
 };
 
 export default App;
