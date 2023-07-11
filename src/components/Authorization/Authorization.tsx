@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Authorization/Authorization.module.css";
 import logo from "../../assets/logo.svg";
+import google from "../../assets/grommet-icons_google.svg";
 
 type Props = {};
 
@@ -25,19 +26,23 @@ const Authorization = (props: Props) => {
           <input
             type="text"
             className={styles.input}
-            placeholder="Придумайте пароль "
+            placeholder="Введите пароль  "
           />
         </div>
         <div className={styles.input_block}>
           <button className={styles.button_block}> Продолжить</button>
         </div>
-        <div>
-          <p className={styles.personal}>
-            Нажимая на кнопку, я соглашаюсь на обработку персональных данных
-          </p>
+
+        <p className={styles.changes}>или войдите через</p>
+
+        <div className={styles.input_google}>
+          <img src={google} alt="" />
+          <p>Войти через Google</p>
         </div>
         <div>
-          <p className={styles.log_in}>У вас уже есть аккаунт? Войти</p>
+          <p className={styles.log_in}>
+            У вас еще нет аккаунта ? Зарегестрируйтесь
+          </p>
         </div>
       </div>
     </div>
