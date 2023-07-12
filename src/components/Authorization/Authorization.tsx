@@ -22,7 +22,11 @@ const Authorization = (props: Props) => {
           />
         </div>
         <div className={styles.input_block}>
-          <h4>Пароль</h4>
+          <div className={styles.password_block}>
+            <h4>Пароль</h4>
+            <a>Забыли пароль</a>
+          </div>
+
           <input
             type="text"
             className={styles.input}
@@ -41,7 +45,7 @@ const Authorization = (props: Props) => {
         </div>
         <div>
           <p className={styles.log_in}>
-            У вас еще нет аккаунта ? Зарегестрируйтесь
+            У вас еще нет аккаунта ? <span>Зарегестрируйтесь</span>
           </p>
         </div>
       </div>
