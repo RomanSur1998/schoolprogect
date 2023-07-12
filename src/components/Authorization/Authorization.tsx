@@ -30,7 +30,7 @@ const Authorization = (props: Props) => {
           />
         </div>
         <div className={styles.input_block}>
-          <button className={styles.button_block}> Продолжить</button>
+          <button className={styles.button_block}>Войти</button>
         </div>
 
         <p className={styles.changes}>или войдите через</p>
