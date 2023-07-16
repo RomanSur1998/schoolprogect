@@ -71,6 +71,7 @@
   background: var(--black, #1b1c1f);
   color: #fff;
   margin-top: 32px;
+  cursor: pointer;
 }
 .image_logo {
   width: 142px;
