@@ -1,23 +1,10 @@
-import {
-  CHANGE_EMAIL,
-  CHANGE_NAME,
-  CHANGE_PASSWORD,
-  CHANGE_SECONDNAME,
-} from "../store/RegistrReducer";
+import { AUTH_EMAIL, AUTH_PASSWORD } from "../store/AuthReducer";
 
-export const ChangeName = (payload: string) => ({
-  type: CHANGE_NAME,
+export const authEmailAction = (payload: any) => ({
+  type: AUTH_EMAIL,
   payload: payload,
 });
-export const ChangeSecondName = (payload: any) => ({
-  type: CHANGE_SECONDNAME,
-  payload: payload,
-});
-export const ChangeEmail = (payload: any) => ({
-  type: CHANGE_EMAIL,
-  payload: payload,
-});
-export const ChangePassword = (payload: any) => ({
-  type: CHANGE_PASSWORD,
+export const authPasswordAction = (payload: any) => ({
+  type: AUTH_PASSWORD,
   payload: payload,
 });

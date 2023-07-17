@@ -4,20 +4,21 @@ import logo from "../../assets/logo.svg";
 import { useSelector } from "react-redux";
 import { StateInteface } from "../../store/RegistrReducer";
 import { useDispatch } from "react-redux";
+
+import { Link } from "react-router-dom";
 import {
   ChangeEmail,
   ChangeName,
   ChangePassword,
   ChangeSecondName,
-} from "../../Action/ActionAuth";
-import { Link } from "react-router-dom";
+} from "../../Action/ActionRegistr";
 type Props = {};
 
 const Registration = (props: Props) => {
   const dispatch = useDispatch();
   const registr = useSelector((state: StateInteface) => state.registr);
 
-  console.log("auth", registr);
+  console.log("registr", registr);
 
   const handleNameChange = (event: string) => {
     dispatch(ChangeName(event));

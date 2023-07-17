@@ -1,13 +1,15 @@
 import { RegistrState } from "./RegistrReducer";
 
 const defaultState = {
-  email: "1",
-  password: "1",
+  email: "2",
+  password: "2",
 };
 
 export interface FormInterface {
-  email: string;
-  password: string;
+  auth: {
+    email: string;
+    password: string;
+  };
 }
 export interface AuthInterface {
   auth: FormInterface;
@@ -22,7 +24,6 @@ export const AuthReducer = (state = defaultState, action: RegistrState) => {
       return { ...state, email: action.payload };
     case AUTH_PASSWORD:
       return { ...state, password: action.payload };
-
     default:
       return state;
   }
