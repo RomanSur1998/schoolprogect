@@ -103,7 +103,7 @@
   display: flex;
   width: 249px;
   height: 28.223px;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   flex-shrink: 0;
   color: #767e8c;

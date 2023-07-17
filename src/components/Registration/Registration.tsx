@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../Registration/Registration.module.css";
 import logo from "../../assets/logo.svg";
 import { useSelector } from "react-redux";
-import { StateInteface } from "../../store/AuthReducer";
+import { StateInteface } from "../../store/RegistrReducer";
 import { useDispatch } from "react-redux";
 import {
   ChangeEmail,
@@ -10,13 +10,14 @@ import {
   ChangePassword,
   ChangeSecondName,
 } from "../../Action/ActionAuth";
+import { Link } from "react-router-dom";
 type Props = {};
 
 const Registration = (props: Props) => {
   const dispatch = useDispatch();
-  const auth = useSelector((state: StateInteface) => state.auth);
+  const registr = useSelector((state: StateInteface) => state.registr);
 
-  console.log("auth", auth);
+  console.log("auth", registr);
 
   const handleNameChange = (event: string) => {
     dispatch(ChangeName(event));
@@ -88,7 +89,9 @@ const Registration = (props: Props) => {
           </p>
         </div>
         <div>
-          <p className={styles.log_in}>У вас уже есть аккаунт? Войти</p>
+          <p className={styles.log_in}>
+            У вас уже есть аккаунт? <Link to="/auth"> Войти </Link>{" "}
+          </p>
         </div>
       </div>
     </div>

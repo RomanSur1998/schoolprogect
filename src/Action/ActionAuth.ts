@@ -3,7 +3,7 @@ import {
   CHANGE_NAME,
   CHANGE_PASSWORD,
   CHANGE_SECONDNAME,
-} from "../store/AuthReducer";
+} from "../store/RegistrReducer";
 
 export const ChangeName = (payload: string) => ({
   type: CHANGE_NAME,
