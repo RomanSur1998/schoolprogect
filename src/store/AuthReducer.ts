@@ -19,7 +19,7 @@ export const AUTH_EMAIL = "AUTH_EMAIL";
 export const AUTH_PASSWORD = "AUTH_PASSWORD";
 
 export const AuthReducer = (state = defaultState, action: RegistrState) => {
-  switch (action.payload) {
+  switch (action.type) {
     case AUTH_EMAIL:
       return { ...state, email: action.payload };
     case AUTH_PASSWORD:
