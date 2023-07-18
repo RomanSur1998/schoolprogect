@@ -1,9 +1,15 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-type Props = {};
+type Props = {
+  children: ReactNode;
+};
 
-const FormLayout = (props: Props) => {
-  return <div>FormLayout</div>;
+const FormLayout: React.FC<Props> = ({ children }) => {
+  return (
+    <div>
+      <div>{children}</div>
+    </div>
+  );
 };
 
 export default FormLayout;

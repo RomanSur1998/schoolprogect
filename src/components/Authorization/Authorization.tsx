@@ -4,7 +4,6 @@ import logo from "../../assets/logo.svg";
 import google from "../../assets/grommet-icons_google.svg";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-
 import { authEmailAction, authPasswordAction } from "../../Action/ActionAuth";
 
 type Props = {};
