@@ -2,9 +2,19 @@ import React from "react";
 import styles from "./Recovery.module.css";
 import logo from "../../assets/logo.svg";
 import FormLayout from "../../layouts/FormLayout/FormLayout";
+import { useDispatch } from "react-redux";
+import { RecoveryAction } from "../../Action/ActionRecovery";
+import { useSelector } from "react-redux";
 type Props = {};
 
 const Recovery = (props: Props) => {
+  const dispach = useDispatch();
+  const recovery = useSelector((state: any) => state.recovery);
+  console.log("recovery", recovery);
+
+  const handleRecovry = (event: string) => {
+    dispach(RecoveryAction(event));
+  };
   return (
     <FormLayout>
       <div className={styles.container}>
@@ -21,6 +31,9 @@ const Recovery = (props: Props) => {
               type="text"
               className={styles.input}
               placeholder="example@gmail.com"
+              onChange={(e) => {
+                handleRecovry(e.target.value);
+              }}
             />
           </div>
 
