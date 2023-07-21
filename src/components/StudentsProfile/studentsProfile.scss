@@ -1,0 +1,46 @@
+.profile__block {
+  height: 756px;
+  margin: 38px 0 56px;
+}
+
+.profile {
+  &__data {
+    & h4 {
+      padding-bottom: 18px;
+      width: 190px;
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(0, 0, 0, 1);
+    }
+
+    & p {
+      padding-bottom: 32px;
+      font-family: Manrope;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__logo {
+    margin: 42px 0 0;
+  }
+
+  &__avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(217, 217, 217, 1);
+  }
+
+  &__data {
+    margin: 80px 0 163px;
+  }
+}

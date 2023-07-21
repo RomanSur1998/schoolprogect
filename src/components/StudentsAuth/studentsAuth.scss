@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  margin-top: 5px;
+}
+
+.container h4 {
+  color: var(--black, #1b1c1f);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container h3 {
+  color: var(--black, #1b1c1f);
+  font-family: Manrope;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+.registr__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 582px;
+  height: 887px;
+  background-color: aqua;
+  border-radius: 20px;
+  border: 1px solid #e0e5ed;
+  background: #fff;
+  margin: 35px 0 28px;
+
+  &-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+  }
+}
+
+.input {
+  display: flex;
+  width: 380px;
+  height: 50px;
+  /* padding: 10px 18px; */
+  padding-left: 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #e0e5ed;
+}
+.button__block {
+  color: #fff;
+  display: flex;
+  width: 380px;
+  padding: 14px 140px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 25px;
+  background: linear-gradient(90deg, rgba(4, 0, 178, 0.6) 0%, #5b62ff 100%);
+}
+.image__logo {
+  width: 142px;
+  height: 38.303px;
+  flex-shrink: 0;
+  margin-bottom: 32px;
+}
+.input__block {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  gap: 8px;
+  margin-top: 10px;
+}
+.personal {
+  display: flex;
+  width: 327px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #767e8c;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 12px;
+}
+.log__in {
+  color: #767e8c;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 32px;
+}
+
+.changes {
+  color: #767e8c;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 25px;
+}
+
+span {
+  color: #5b62ff;
+}

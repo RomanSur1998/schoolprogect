@@ -45,7 +45,7 @@ const Authorization = (props: Props) => {
         </div>
         <div>
           <p className={styles.log_in}>
-            У вас еще нет аккаунта ? <span>Зарегестрируйтесь</span>
+            вас еще нет аккаунта ?<span>Зарегестрируйтесь</span>
           </p>
         </div>
       </div>
