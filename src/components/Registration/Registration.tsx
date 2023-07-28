@@ -11,8 +11,10 @@ import {
   ChangeName,
   ChangePassword,
   ChangeSecondName,
+  ConfirmPassword,
 } from "../../Action/ActionRegistr";
 import FormLayout from "../../layouts/FormLayout/FormLayout";
+import { handleRegistr } from "../../function/RegistrFunction/Registr";
 type Props = {};
 
 const Registration = (props: Props) => {
@@ -21,17 +23,20 @@ const Registration = (props: Props) => {
 
   console.log("registr", registr);
 
-  const handleNameChange = (event: string) => {
-    dispatch(ChangeName(event));
-  };
-  const handleSecondNameChange = (event: string) => {
-    dispatch(ChangeSecondName(event));
-  };
+  // const handleNameChange = (event: string) => {
+  //   dispatch(ChangeName(event));
+  // };
+  // const handleSecondNameChange = (event: string) => {
+  //   dispatch(ChangeSecondName(event));
+  // };
   const handleEmailChange = (event: string) => {
     dispatch(ChangeEmail(event));
   };
   const handlePasswordChange = (event: string) => {
     dispatch(ChangePassword(event));
+  };
+  const handleConfirmPassword = (event: string) => {
+    dispatch(ConfirmPassword(event));
   };
 
   return (
@@ -43,7 +48,7 @@ const Registration = (props: Props) => {
             <h3>Регистрация </h3>
           </div>
 
-          <div className={styles.input_block}>
+          {/* <div className={styles.input_block}>
             <h4>Имя</h4>
             <input
               type="text"
@@ -51,8 +56,8 @@ const Registration = (props: Props) => {
               className={styles.input}
               onChange={(e) => handleNameChange(e.target.value)}
             />
-          </div>
-          <div className={styles.input_block}>
+          </div> */}
+          {/* <div className={styles.input_block}>
             <h4>Фамилия</h4>
             <input
               type="text"
@@ -60,7 +65,7 @@ const Registration = (props: Props) => {
               placeholder="Ваша фамилия"
               onChange={(e) => handleSecondNameChange(e.target.value)}
             />
-          </div>
+          </div> */}
           <div className={styles.input_block}>
             <h4>Электронная почта </h4>
             <input
@@ -78,9 +83,21 @@ const Registration = (props: Props) => {
               placeholder="Придумайте пароль "
               onChange={(e) => handlePasswordChange(e.target.value)}
             />
+            <input
+              type="text"
+              className={styles.input}
+              placeholder="Подтвердите пароль "
+              onChange={(e) => handleConfirmPassword(e.target.value)}
+            />
           </div>
           <div className={styles.input_block}>
-            <button type="submit" className={styles.button_block}>
+            <button
+              type="submit"
+              className={styles.button_block}
+              onClick={() => {
+                handleRegistr(registr);
+              }}
+            >
               {" "}
               Продолжить
             </button>
