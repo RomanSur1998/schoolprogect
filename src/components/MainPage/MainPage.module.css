@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.content_container {
+  margin-top: 40px;
+  display: flex;
+  width: 30%;
+}

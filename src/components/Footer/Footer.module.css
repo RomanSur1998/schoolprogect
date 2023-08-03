@@ -1,9 +1,32 @@
 .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--black, #1b1c1f);
+  flex-direction: column;
+  justify-content: center;
+  background: var(--dark_blue, rgba(24, 40, 88, 1));
   color: white;
   height: 228px;
-  flex-shrink: 0;
+}
+.footer_block {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.right_footer {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+.social_icon {
+  margin: 20px auto;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+.social_icon img {
+  margin: 5px;
+}
+.social_icon p {
+  color: rgba(118, 126, 140, 1);
 }
