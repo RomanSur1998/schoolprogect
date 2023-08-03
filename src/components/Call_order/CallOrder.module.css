@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c7ad7;
+  width: 80vw;
+  margin: 40px auto;
+  border-radius: 20px;
+
+  height: 370px;
+}
+.call_container {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  width: 90%;
+}
+.call_container p {
+  width: 350px;
+}
+.call_container h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.call_from {
+  display: flex;
+  flex-direction: column;
+}
+.call_from div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.call_from p {
+  font-size: 0.8em;
+}
+.input_form {
+  width: 550px;
+  height: 50px;
+  border-radius: 15px;
+  padding: 15px;
+  border: none;
+  margin-bottom: 20px;
+  color: #3c7ad7;
+}
+.call_from button {
+  width: 550px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.radio_btn {
+  width: 5px;
+  height: 5px;
+}
